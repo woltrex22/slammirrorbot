@@ -44,10 +44,43 @@ def stats(update, context):
 
 
 def start(update, context):
-    start_string = f'''
-This bot can mirror all your links to Google Drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
-'''
+    start_string = f'<b><u>Bot Commands</b></u>\n'
+
+f'<b>/mirror [download_url][magnet_link]</b>: Start mirroring the link to Google Drive. Use /mirror qb to mirror with qBittorrent, and use /mirror qbs to select files before downloading\n'
+
+f'<b>/tarmirror [download_url][magnet_link]</b>: Start mirroring and upload the archived (.tar) version of the download\n'
+
+f'<b>/zipmirror [download_url][magnet_link]</b>: Start mirroring and upload the archived (.zip) version of the download\n'
+
+f'<b>/unzipmirror [download_url][magnet_link]</b>: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive\n'
+
+f'<b>/clone [drive_url]</b>: Copy file/folder to Google Drive\n'
+
+f'<b>/count [drive_url]</b>: Count file/folder of Google Drive Links\n'
+
+
+f'<b>/watch [youtube-dl supported link]</b>: Mirror through youtube-dl. Click /watch for more help\n'
+
+f'<b>/tarwatch [youtube-dl supported link]</b>: Mirror through youtube-dl and tar before uploading\n'
+
+f'<b>/cancel</b>: Reply to the message by which the download was initiated and that download will be cancelled\n'
+
+
+f'<b>/list [search term]</b>: Searches the search term in the Google Drive, If found replies with the link\n'
+
+f'<b>/status</b>: Shows a status of all the downloads\n'
+
+f'<b>/stats</b>: Show Stats of the machine the bot is hosted on\n'
+
+f'<b>/ping</b>: Check ping\n'
+
+f'<b>/speedtest</b>: Check Internet Speed of the Host\n'
+
+f'<b>/tshelp</b>: Get help for Torrent search module\n'
+
+
+
+
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("How to Deploy", "https://woltrex.blogspot.com/2021/08/how-to-create-own-telegram-mirror-bot.html")
     buttons.buildbutton("YouTube Tutorial", "https://youtu.be/jWEs0fRk7Dk")
