@@ -45,9 +45,8 @@ def stats(update, context):
 
 def start(update, context):
     start_string = f'''
-I'm Alive since 
-- {currentTime}
-<b>Bot Commands</b>
+I'm Alive 🥺.
+<b><u>Bot Commands</u></b>
 
 /{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /{BotCommands.MirrorCommand} qb to mirror with qBittorrent, and use /{BotCommands.MirrorCommand} qbs to select files before downloading
 
@@ -107,9 +106,9 @@ def restart(update, context):
 
 
 def ping(update, context):
-    start_time = int(round(time.time() * 1000))
+    start_time = int(round(time.time()))
     reply = sendMessage("Starting Ping", context.bot, update)
-    end_time = int(round(time.time() * 1000))
+    end_time = int(round(time.time()))
     editMessage(f'{end_time - start_time} ms', reply)
 
 
