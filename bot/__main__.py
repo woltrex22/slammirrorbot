@@ -106,9 +106,9 @@ def restart(update, context):
 
 
 def ping(update, context):
-    start_time = int(round(time.time()))
+    start_time = int(round(time.time() * 100))
     reply = sendMessage("Starting Ping", context.bot, update)
-    end_time = int(round(time.time()))
+    end_time = int(round(time.time() * 100))
     editMessage(f'{end_time - start_time} ms', reply)
 
 
