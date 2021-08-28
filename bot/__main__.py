@@ -2,6 +2,7 @@ import shutil, psutil
 import signal
 import os
 import asyncio
+import time
 
 from pyrogram import idle
 from bot import app, alive
@@ -46,6 +47,7 @@ def stats(update, context):
 def start(update, context):
     start_string = f'''
 I'm Alive 🥺.
+
 <b><u>Bot Commands</u></b>
 
 /{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /{BotCommands.MirrorCommand} qb to mirror with qBittorrent, and use /{BotCommands.MirrorCommand} qbs to select files before downloading
@@ -109,6 +111,7 @@ def ping(update, context):
     start_time = int(round(time.time() * 100))
     reply = sendMessage("Starting Ping", context.bot, update)
     end_time = int(round(time.time() * 100))
+    time.sleep(3)
     editMessage(f'{end_time - start_time} ms', reply)
 
 
