@@ -44,40 +44,39 @@ def stats(update, context):
 
 
 def start(update, context):
-    start_string = f'''<b><u>Bot Commands</b></u>
+    start_string = f'''Bot Commands
 
-<b>/mirror [download_url][magnet_link]</b>: Start mirroring the link to Google Drive. Use /mirror qb to mirror with qBittorrent, and use /mirror qbs to select files before downloading
+/mirror [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /mirror qb to mirror with qBittorrent, and use /mirror qbs to select files before downloading
 
-<b>/tarmirror [download_url][magnet_link]</b>: Start mirroring and upload the archived (.tar) version of the download
+/tarmirror [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
 
-<b>/zipmirror [download_url][magnet_link]</b>: Start mirroring and upload the archived (.zip) version of the download
+/zipmirror [download_url][magnet_link]: Start mirroring and upload the archived (.zip) version of the download
 
-<b>/unzipmirror [download_url][magnet_link]</b>: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
+/unzipmirror [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
 
-<b>/clone [drive_url]</b>: Copy file/folder to Google Drive
+/clone [drive_url]: Copy file/folder to Google Drive
 
-<b>/count [drive_url]</b>: Count file/folder of Google Drive Links
-
-
-<b>/watch [youtube-dl supported link]</b>: Mirror through youtube-dl. Click /watch for more help
-
-<b>/tarwatch [youtube-dl supported link]</b>: Mirror through youtube-dl and tar before uploading
-
-<b>/cancel</b>: Reply to the message by which the download was initiated and that download will be cancelled
+/count [drive_url]: Count file/folder of Google Drive Links
 
 
-<b>/list [search term]</b>: Searches the search term in the Google Drive, If found replies with the link
+/watch [youtube-dl supported link]: Mirror through youtube-dl. Click /watch for more help
 
-<b>/status</b>: Shows a status of all the downloads
+/tarwatch [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
 
-<b>/stats</b>: Show Stats of the machine the bot is hosted on
+/cancel: Reply to the message by which the download was initiated and that download will be cancelled
 
-<b>/ping</b>: Check ping
 
-<b>/speedtest</b>: Check Internet Speed of the Host
+/list [search term]: Searches the search term in the Google Drive, If found replies with the link
 
-<b>/tshelp</b>: Get help for Torrent search module
+/status</b>: Shows a status of all the downloads
 
+/stats</b>: Show Stats of the machine the bot is hosted on
+
+/ping: Check ping
+
+/speedtest: Check Internet Speed of the Host
+
+/tshelp: Get help for Torrent search module
 
 '''
 
