@@ -46,36 +46,35 @@ def stats(update, context):
 def start(update, context):
     start_string = f'''
 Bot Commands
+/{BotCommands.HelpCommand}: To get this message
 
-/mirror [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /mirror qb to mirror with qBittorrent, and use /mirror qbs to select files before downloading
+/{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /{BotCommands.MirrorCommand} qb to mirror with qBittorrent, and use /{BotCommands.MirrorCommand} qbs to select files before downloading
 
-/tarmirror [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
+/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
 
-/zipmirror [download_url][magnet_link]: Start mirroring and upload the archived (.zip) version of the download
+/{BotCommands.ZipMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.zip) version of the download
 
-/unzipmirror [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
+/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
 
-/clone [drive_url]: Copy file/folder to Google Drive
+/{BotCommands.CloneCommand} [drive_url]: Copy file/folder to Google Drive
 
-/count [drive_url]: Count file/folder of Google Drive Links
+/{BotCommands.CountCommand} [drive_url]: Count file/folder of Google Drive Links
 
-/watch [youtube-dl supported link]: Mirror through youtube-dl. Click /watch for more help
+/{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help
 
-/tarwatch [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
 
-/cancel: Reply to the message by which the download was initiated and that download will be cancelled
+/{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
 
-/list [search term]: Searches the search term in the Google Drive, If found replies with the link
+/{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, If found replies with the link
 
-/status</b>: Shows a status of all the downloads
+/{BotCommands.StatusCommand}: Shows a status of all the downloads
 
-/stats</b>: Show Stats of the machine the bot is hosted on
+/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
 
-/ping: Check ping
+/{BotCommands.PingCommand}: Check how long it takes to Ping the Bot
 
-/speedtest: Check Internet Speed of the Host
-
-/tshelp: Get help for Torrent search module
+/{BotCommands.TsHelpCommand}: Get help for Torrent search module
 '''
 
 
