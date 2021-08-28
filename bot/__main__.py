@@ -46,7 +46,7 @@ def stats(update, context):
 def start(update, context):
     start_string = f'''
 I'm Alive since 
-- <code>{currentTime}</code>
+- {currentTime}
 <b>Bot Commands</b>
 
 /{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /{BotCommands.MirrorCommand} qb to mirror with qBittorrent, and use /{BotCommands.MirrorCommand} qbs to select files before downloading
