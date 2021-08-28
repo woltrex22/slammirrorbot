@@ -45,7 +45,8 @@ def stats(update, context):
 
 def start(update, context):
     start_string = f'''
-Bot Commands
+<b>Bot Commands</b>
+
 /{BotCommands.HelpCommand}: To get this message
 
 /{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /{BotCommands.MirrorCommand} qb to mirror with qBittorrent, and use /{BotCommands.MirrorCommand} qbs to select files before downloading
@@ -75,6 +76,8 @@ Bot Commands
 /{BotCommands.PingCommand}: Check how long it takes to Ping the Bot
 
 /{BotCommands.TsHelpCommand}: Get help for Torrent search module
+
+If You want to create own bot, watch this Tutorial. 
 '''
 
 
