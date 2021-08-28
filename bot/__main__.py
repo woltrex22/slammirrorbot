@@ -46,7 +46,7 @@ def stats(update, context):
 
 def start(update, context):
     start_string = f'''
-I'm Alive 🥺.
+I'm Alive 🥺. Since <code>{currentTime}</code>
 
 <b><u>Bot Commands</u></b>
 
