@@ -44,7 +44,8 @@ def stats(update, context):
 
 
 def start(update, context):
-    start_string = f'''Bot Commands
+    start_string = f'''
+Bot Commands
 
 /mirror [download_url][magnet_link]: Start mirroring the link to Google Drive. Use /mirror qb to mirror with qBittorrent, and use /mirror qbs to select files before downloading
 
@@ -58,13 +59,11 @@ def start(update, context):
 
 /count [drive_url]: Count file/folder of Google Drive Links
 
-
 /watch [youtube-dl supported link]: Mirror through youtube-dl. Click /watch for more help
 
 /tarwatch [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
 
 /cancel: Reply to the message by which the download was initiated and that download will be cancelled
-
 
 /list [search term]: Searches the search term in the Google Drive, If found replies with the link
 
@@ -77,7 +76,6 @@ def start(update, context):
 /speedtest: Check Internet Speed of the Host
 
 /tshelp: Get help for Torrent search module
-
 '''
 
 
